@@ -10,22 +10,6 @@ type Student struct {
 	Grade *int
 }
 
-func main() {
-	students := make([]Student, 0)
-
-	addStudent(&students, "Parminder Kaur", 1, 90)
-	addStudent(&students, "Ling Fa", 2, 85)
-	addStudent(&students, "Taylor Swift", 3, 95)
-
-	updateGrade(students, 1, 95)
-	updateGrade(students, 2, 90)
-
-	displayStudents(students)
-
-	averageGrade := calculateAverageGrade(students)
-	fmt.Printf("Average Grade: %.2f\n", averageGrade)
-}
-
 func addStudent(students *[]Student, name string, id int, grade int) {
 	newStudent := Student{
 		Name:  name,
@@ -58,4 +42,20 @@ func calculateAverageGrade(students []Student) float64 {
 	}
 	averageGrade := float64(totalGrades) / float64(len(students))
 	return averageGrade
+}
+
+func main() {
+	students := make([]Student, 0)
+
+	addStudent(&students, "Parminder Kaur", 1, 90)
+	addStudent(&students, "Ling Fa", 2, 85)
+	addStudent(&students, "Taylor Swift", 3, 95)
+
+	updateGrade(students, 1, 95)
+	updateGrade(students, 2, 90)
+
+	displayStudents(students)
+
+	averageGrade := calculateAverageGrade(students)
+	fmt.Printf("Average Grade: %.2f\n", averageGrade)
 }
