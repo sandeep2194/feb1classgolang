@@ -47,8 +47,8 @@ func calculateAverageGrade(students []Student) float64 {
 func main() {
 	students := make([]Student, 0)
 
-	addStudent(&students, "Parminder Kaur", 1, 90)
-	addStudent(&students, "Ling Fa", 2, 85)
+	addStudent(&students, "Sheru Singh", 1, 90)
+	addStudent(&students, "Banta Singh", 2, 85)
 	addStudent(&students, "Taylor Swift", 3, 95)
 
 	updateGrade(students, 1, 95)
