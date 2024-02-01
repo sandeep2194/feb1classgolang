@@ -13,9 +13,9 @@ type Student struct {
 func main() {
 	students := make([]Student, 0)
 
-	addStudent(&students, "John Doe", 1, 90)
-	addStudent(&students, "Jane Smith", 2, 85)
-	addStudent(&students, "Alice Johnson", 3, 95)
+	addStudent(&students, "Parminder Kaur", 1, 90)
+	addStudent(&students, "Ling Fa", 2, 85)
+	addStudent(&students, "Taylor Swift", 3, 95)
 
 	updateGrade(students, 1, 95)
 	updateGrade(students, 2, 90)
